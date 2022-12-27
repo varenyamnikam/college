@@ -64,13 +64,19 @@ void STACK::palindrome() {
 
   for (i = top, j = 0; i >= 0; i--, j++) {
     str[j] = a[i];
+    cout << a[i];
   }
   str[j] = '\0';
 
   if (strcmp(str, a) == 0)
-    cout << "\n\nString is palindrome...";
+    cout << "\n\nString is palindrome..." << str;
   else
     cout << "\n\nString is not palindrome...";
+  i = 0;
+  while (1 != 10) {
+    cout << a[i];
+    i++;
+  }
 }
 
 int main() {

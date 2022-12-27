@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-const int MAX = 20;
+#define MAX 20;
 class Stack {
-  char str[MAX];
+  char str[20];
   int top;
 
 public:
@@ -23,7 +23,7 @@ bool Stack::isEmpty() {
 }
 
 bool Stack::isFull() {
-  if (top == MAX - 1)
+  if (top == 20 - 1)
     return 1;
   else
     return 0;
